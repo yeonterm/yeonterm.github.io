@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+  <title>MOVIE THEATER</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href = "style.css">
+</head>
+<body bgcolor = "#E6E6E6" >
+  <img src = "image/3_t.png" style = "margin-left:auto; margin-right:auto; display:block;"/>
+  <nav id="topMenu">
+    <ul>
+      <li class = "topMenuLi">
+        <a href="action.html" style="color:black">ACTION</a>
+        <ul class = "topMenu">
+        </ul>
+      </li>
+              <li>|</li>
+      <li class = "topMenuLi">
+        <a href="romance.html" style="color:black">ROMANCE</a>
+        <ul class = "topMenu">
+        </ul>
+      </li>
+              <li>|</li>
+      <li class = "topMenuLi">
+        <a href="horror.html" style="color:black">HORROR</a>
+        <ul class = "topMenu">
+        </ul>
+      </li>
+              <li>|</li>
+      <li class = "topMenuLi">
+        <a href="sf.html" style="color:black">SF</a>
+        <ul class = "topMenu">
+        </ul>
+      </li>
+              <li>|</li>
+      <li class ="topMenuLi">
+        <a href="animation.html" style = "color:black">ANIMATION</a>
+        <ul class = "topMenu">
+        </ul>
+    </ul>
+  </nav>
+
+</br>
+</br>
+<div class="w3-content w3-section" style="max-width:500px;margin-left:auto; margin-right:auto; display:block;">
+  <img class="mySlides" src="image/ready.jpg" style="width:100%">
+  <img class="mySlides" src="image/ban.jpg" style="width:100%">
+  <img class="mySlides" src="image/jig.jpg" style="width:100%">
+  <img class="mySlides" src="image/inter.jpg" style="width:100%">
+  <img class="mySlides" src="image/yourname.jpg" style="width:100%">
+</div>
+<script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel(){
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+      for(i=0;i<x.length; i++){
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if(myIndex > x.length){
+        myIndex = 1;
+      }
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 2000);
+  }
+</script>
+
+
+</br>
+</br>
+</br>
+<div style="width:200px;height:150px; float:left; margin-left:640px; margin-right:auto;">
+  <a href="http://www.cgv.co.kr/"><img src = "image/cgv.png" width="150" height="50" style = "margin-left:auto; margin-right:auto; display:block;"/></a>
+</div>
+<div style="width:200px;height:150px; float:left; margin-left:auto;margin-right:auto;">
+<a href="http://www.megabox.co.kr/"><img src = "image/megabox.png" width="150" height="50"style = "margin-left:auto; margin-right:auto; display:block;"/></a>
+</div>
+<div style="width:200px;height:150px;float:left;margin-left:auto; margin-right:300px;">
+<a href="http://www.lottecinema.co.kr/LCHS/index.aspx"><img src = "image/lottecinema.png" width="150" height="50" style = "margin-left:auto; margin-right:auto; display:block;"/></a>
+</div>
+</body>
+</html>

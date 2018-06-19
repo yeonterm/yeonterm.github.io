@@ -1,0 +1,56 @@
+<style>
+  a{
+    color:white;
+    text-decoration: none;
+  }
+  #grid{
+    border:2px solid white;
+    difplay:grid;
+    grid-template-columns:150px 1fr;
+  }
+  #topMenu{
+    height:30px;
+    width: 4000px;
+  }
+  #topMenu ul {
+    list-style-type:none; //ul내부 목록표시 없앰
+    margin-left:320px;
+    margin-right:320px;
+    padding-left : auto;
+    padding-right: auto;
+  }
+  #topMenu ul li{
+    color:black;
+    background-color: white;
+    float:left;
+    line-height: 30px;
+    vertical-align:middle;
+    text-align:center;
+    position:relative;
+  }
+  .menuLink{
+    text-decoration: none;
+    display:block;
+    width:200px;
+    font-size: 20px;
+    font-weight:bold;
+    font-family: "Trebuchet MS", Dotum;
+  }
+
+  body{
+    margin:0;
+    padding:0;
+    background:url(img.jpg) center center fixed no-repeat;
+  }
+  video{
+    position: fixed;
+    top:0;
+    left:0;
+    min-width:100%;
+    min-height: 100%;
+    width:auto;
+    height: auto;
+    z-index:-1;
+    overflow:hidden;
+  }
+</style>
